@@ -1,106 +1,71 @@
-# React
+# 🌌 KalChakra – The Blockchain Time Vault  
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+### *Where your memories revolve through time.*
+
+KalChakra is a full-stack web application that enables users to create digital time capsules, securely store them, and unlock them at a chosen future date.
+
+It blends secure authentication, AI-powered message generation, and blockchain-inspired simulation into an immersive memory preservation experience.
+
+---
 
 ## 🚀 Features
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+- 🔐 Email OTP-based Authentication  
+- 🧑‍💻 Secure Login & Session Management  
+- 📦 Create Time Capsules (Text, Image, Video)  
+- ⏳ Set Future Unlock Date  
+- 🤖 Dynamic AI Message Generation  
+- 🔗 Simulated Blockchain Hash & Encryption Animation  
+- 🌌 Private 3D Dashboard with Capsule Timeline  
+- 🔒 Locked / 🔓 Unlocked Capsule States  
+- 📊 Countdown to Next Unlock  
+- 🎨 Theme Modes (Past / Present / Future)  
+- 🗄 Secure Backend Data Storage  
 
-## 📋 Prerequisites
+---
 
-- Node.js (v14.x or higher)
-- npm or yarn
+## 🛠 Tech Stack
 
-## 🛠️ Installation
+### Frontend
+- React / Next.js  
+- Tailwind CSS  
+- Framer Motion / GSAP  
+- Three.js  
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+### Backend
+- Node.js / Express (or Firebase)  
+- MongoDB / Firestore  
+- Cloud Storage  
 
-## 📁 Project Structure
+### AI Integration
+- Dynamic Message Generation API  
 
-```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
-```
+---
 
-## 🧩 Adding Routes
+## 📦 How It Works
 
-To add new routes to the application, update the `Routes.jsx` file:
+1. User signs up with email and verifies using OTP.  
+2. User creates a capsule (media + message + unlock date).  
+3. System generates a blockchain-style hash and stores capsule data securely.  
+4. Capsule appears in the user’s private dashboard timeline.  
+5. On the selected date, the capsule becomes available for unlock.  
 
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
+---
 
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
+## 🔒 Privacy & Security
 
-  return element;
-};
-```
+- All capsules are private by default.  
+- Linked strictly to authenticated user accounts.  
+- No public visibility of stored memories.  
 
-## 🎨 Styling
+---
 
-This project uses Tailwind CSS for styling. The configuration includes:
+## 🎯 Objective
 
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
+To create a secure, immersive digital vault that preserves memories and delivers them back through time.
 
-## 📱 Responsive Design
+---
 
-The app is built with responsive design using Tailwind CSS breakpoints.
+## 🌀 Project Status
 
-
-## 📦 Deployment
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-## 🙏 Acknowledgments
-
-- Built with [Rocket.new]
-- Powered by React and Vite
-- Styled with Tailwind CSS
-
+**In progress**
